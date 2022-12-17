@@ -223,6 +223,7 @@ body li {
 .heading {
     display: flex;
     flex-direction: column;
+    background-image: url(images/main-background);
     background-color: #2f303a;
     align-items: center;
     text-align: center;
@@ -240,7 +241,6 @@ body li {
     padding: 106px 252px 0px 252px;
 }
 .jobs {
-    margin-top: -94px;
 }
 .service-button {
     font-weight: 700;
@@ -304,6 +304,8 @@ body li {
     gap: 30px;
 }
 
+/* Team */
+
 .team {
     background-color: #f5f4fa;
 }
@@ -361,6 +363,7 @@ body li {
     padding-bottom: 30px;
     display: block;
 }
+
 .clients h2 {
     font-weight: 700;
     font-size: 36px;
