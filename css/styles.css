@@ -90,11 +90,16 @@ body li {
 .envelope {
     width: 16px;
     height: 12px;
+    fill: currentColor;
+    margin-right: 10px;
 }
 .phone {
     width: 10px;
     height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
 }
+
 .nav-list a {
     font-weight: 500;
     font-size: 14px;
@@ -125,10 +130,19 @@ body li {
     justify-content: space-between;
     gap: 50px;
 }
+
+/* FOOTER */
+
 .footer-wrapper {
     background-color: #2f303a;
     color: #ffffff;
     padding: 60px 0px;
+}
+
+.footer {
+    display: flex;
+    justify-content: left;
+    gap: 70px;
 }
 
 .footer-wrapper address {
@@ -140,6 +154,7 @@ body li {
 .address {
     padding-top: 20px;
 }
+
 .footer-address {
     text-decoration: none;
     font-style: normal;
@@ -148,6 +163,7 @@ body li {
     line-height: 1.71;
     color: #ffffff;
 }
+
 .footer-contact {
     color: #ffffff60;
     text-decoration: none;
@@ -162,9 +178,40 @@ body li {
 .footer-contact:focus {
     color: #2196f3;
 }
+
 .footer-tel {
     text-decoration: none;
 }
+
+.footer-join-us {
+    text-align: left;
+}
+
+.footer-join-us-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-join-us-icons a {
+    display: block;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.footer-join-us-icons svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: currentColor;
+}
+
+.footer-join-us-icons a:hover {
+    background-color: #2196f3;
+}
+
 /* Main Portfolio */
 
 .category-buttons {
@@ -293,6 +340,7 @@ body li {
     color: #212121;
     text-transform: uppercase;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .text-list p {
@@ -413,16 +461,18 @@ body li {
     padding-bottom: 50px;
     display: block;
 }
-.client-icons {
+.client-icons-list {
     display: flex;
-    flex-direction: row;
     gap: 30px;
+    justify-content: space-between;
 }
+
 .client-icons a {
     border-radius: 4px;
     outline: 1px solid #afb1b8;
     display: inline-block;
     color: #afb1b8;
+    padding: 16px 32px;
 }
 .client-icons svg {
     display: block;
@@ -432,4 +482,5 @@ body li {
 }
 .client-icons a:hover {
     color: #2196f3;
+    outline-color: #2196f3;
 }
