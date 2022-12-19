@@ -23,6 +23,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: black;
+    width: 1600px;
 }
 
 body li {
@@ -120,7 +121,8 @@ body li {
     color: #757575;
     text-decoration: none;
 }
-.contact:hover {
+.contact:hover,
+.contact:focus {
     color: #2196f3;
 }
 
@@ -208,7 +210,8 @@ body li {
     fill: currentColor;
 }
 
-.footer-join-us-icons a:hover {
+.footer-join-us-icons a:hover,
+.footer-join-us-icons a:focus {
     background-color: #2196f3;
 }
 
@@ -319,7 +322,8 @@ body li {
     padding: 10px 41px;
 }
 
-.service-button:hover .service-button:focus {
+.service-button:hover,
+.service-button:focus {
     background-color: #2196f3;
     color: #ffffff;
     cursor: pointer;
@@ -457,7 +461,8 @@ body li {
     fill: currentColor;
     display: block;
 }
-.team-social-icons a:hover {
+.team-social-icons a:hover,
+.team-social-icons a:focus {
     background-color: #2196f3;
     color: #ffffff;
 }
@@ -490,7 +495,8 @@ body li {
     height: 60px;
     fill: currentColor;
 }
-.client-icons a:hover {
+.client-icons a:hover,
+.client-icons a:focus {
     color: #2196f3;
     outline-color: #2196f3;
 }
