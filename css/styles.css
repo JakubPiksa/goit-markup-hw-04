@@ -46,7 +46,7 @@ ul {
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    color: black;
+    color: var(--logo-black);
 }
 
 body li {
