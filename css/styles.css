@@ -13,6 +13,30 @@ ul {
     border: 0px;
 }
 
+:root {
+    --blue: #2196f3;
+    --logo-black: #000000;
+    --font-black: #212121;
+    --font-gray: #757575;
+    --font-white: #ffffff;
+    --font-address: #ffffff60;
+    --shadow: rgba(0, 0, 0, 0.25);
+    --background-dark: #2f303a;
+    --background-dark-transparent: #2f303a66;
+    --stroke-color: #ececec;
+    --border-color: #eeeeee;
+    --button-color: #f5f4fa;
+    --icon-color: #afb1b8;
+    --background-light: #e5e5e5;
+    --shadow-box-1: rgba(0, 0, 0, 0.12);
+    --shadow-box-2: rgba(0, 0, 0, 0.14);
+    --shadow-box-3: rgba(0, 0, 0, 0.2);
+    --shadow-box-portfolio-1: rgba(0, 0, 0, 0.12);
+    --shadow-box-portfolio-2: rgba(0, 0, 0, 0.06);
+    --shadow-box-portfolio-3: rgba(0, 0, 0, 0.16);
+    --icon-background: rgba(255, 255, 255, 0.1);
+}
+
 *,
 *::before,
 *::after {
@@ -28,6 +52,12 @@ body {
 body li {
     list-style: none;
 }
+
+img,
+svg {
+    vertical-align: middle;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -45,19 +75,19 @@ body li {
     line-height: 1.17;
     font-weight: 700;
     text-decoration: none;
-    color: #2196f3;
+    color: var(--blue);
 }
 .studio-black {
-    color: #000000;
+    color: var(--logo-black);
 }
 .studio-white {
-    color: #ffffff;
+    color: var(--font-white);
 }
 
 .header-wrapper {
-    background-color: #ffffff;
+    background-color: var(--font-white);
     padding: 24px 0px 25px 0px;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid var(--stroke-color);
 }
 
 .header-wrapper > .container {
@@ -104,25 +134,25 @@ body li {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
-    color: #212121;
+    color: var(--font-black);
     text-decoration: none;
 }
 
 .nav-list a:hover,
 .nav-list a:focus {
-    color: #2196f3;
+    color: var(--blue);
 }
 
 .contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
-    color: #757575;
+    color: var(--font-gray);
     text-decoration: none;
 }
 .contact:hover,
 .contact:focus {
-    color: #2196f3;
+    color: var(--blue);
 }
 
 .contact-list {
@@ -135,8 +165,8 @@ body li {
 /* FOOTER */
 
 .footer-wrapper {
-    background-color: #2f303a;
-    color: #ffffff;
+    background-color: var(--background-dark);
+    color: var(--font-white);
     padding: 60px 0px;
 }
 
@@ -162,11 +192,11 @@ body li {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
-    color: #ffffff;
+    color: var(--font-white);
 }
 
 .footer-contact {
-    color: #ffffff60;
+    color: var(--font-address);
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
@@ -177,7 +207,7 @@ body li {
 
 .footer-contact:hover,
 .footer-contact:focus {
-    color: #2196f3;
+    color: var(--blue);
 }
 
 .footer-tel {
@@ -194,7 +224,7 @@ body li {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-align: left;
-    padding-top: 10px;
+    margin-top: 12px;
 }
 
 .footer-join-us-icons {
@@ -206,9 +236,9 @@ body li {
 .footer-join-us-icons a {
     display: block;
     padding: 12px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--icon-background);
     border-radius: 50%;
-    color: #ffffff;
+    color: var(--font-white);
 }
 
 .footer-join-us-icons svg {
@@ -220,7 +250,7 @@ body li {
 
 .footer-join-us-icons a:hover,
 .footer-join-us-icons a:focus {
-    background-color: #2196f3;
+    background-color: var(--blue);
 }
 
 /* Main Portfolio */
@@ -232,7 +262,7 @@ body li {
 
 .button {
     font-weight: 500;
-    background-color: #f5f4fa;
+    background-color: var(--button-color);
     font-size: 16px;
     line-height: 1.625;
     text-align: center;
@@ -250,8 +280,8 @@ body li {
 
 .button:hover,
 .button:focus {
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: var(--blue);
+    color: var(--font-white);
     cursor: pointer;
 }
 
@@ -263,7 +293,7 @@ body li {
 
 .portfolio-projects figcaption {
     padding: 20px 24px;
-    border: 1px solid #eeeeee;
+    border: 1px solid var(--border-color);
     border-top: none;
     display: block;
 }
@@ -296,20 +326,19 @@ body li {
 /* TŁo*/
 
 .heading {
-    background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
+    background: linear-gradient(
+            var(--background-dark-transparent),
+            var(--background-dark-transparent)
         ),
-        url(/images/index-background.jpg);
-    background-size: cover;
+        url(../images/index-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #2f303a;
+    background-color: var(--background-dark);
 }
 
 .heading h1 {
     margin-bottom: 30px;
-    color: #ffffff;
+    color: var(--font-white);
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -325,8 +354,8 @@ body li {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #ffffff;
-    background-color: #2196f3;
+    color: var(--font-white);
+    background-color: var(--blue);
     outline: none;
     border: none;
     border-radius: 4px;
@@ -335,8 +364,8 @@ body li {
 
 .service-button:hover,
 .service-button:focus {
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: var(--blue);
+    color: var(--font-white);
     cursor: pointer;
 }
 
@@ -352,7 +381,7 @@ body li {
 }
 .article-images {
     padding: 25px 100px;
-    background-color: #f5f4fa;
+    background-color: var(--button-color);
     border-radius: 4px;
     margin-bottom: 30px;
 }
@@ -362,7 +391,7 @@ body li {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--font-black);
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 10px;
@@ -373,7 +402,7 @@ body li {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--font-gray);
     text-align: justify;
 }
 
@@ -382,7 +411,7 @@ body li {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--font-black);
     text-align: center;
     margin-bottom: 50px;
 }
@@ -397,7 +426,7 @@ body li {
 /* Team */
 
 .team {
-    background-color: #f5f4fa;
+    background-color: var(--button-color);
 }
 
 .team h2 {
@@ -405,7 +434,7 @@ body li {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--font-black);
     text-align: center;
     padding-bottom: 50px;
     display: block;
@@ -418,11 +447,11 @@ body li {
 }
 
 .team figure {
-    background-color: #ffffff;
+    background-color: var(--font-white);
     font-size: 16px;
     letter-spacing: 0.03em;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px var(--shadow-box-1), 0px 1px 1px var(--shadow-box-2),
+        0px 2px 1px var(--shadow-box-3);
     border-radius: 0px 0px 4px 4px;
     display: block;
 }
@@ -438,7 +467,7 @@ body li {
     font-size: 16px;
     line-height: 1.1875;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--font-black);
     display: block;
 }
 
@@ -447,7 +476,7 @@ body li {
     font-size: 16px;
     line-height: 1.1875;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--font-gray);
     padding-top: 10px;
     padding-bottom: 16px;
     display: block;
@@ -463,7 +492,7 @@ body li {
 .team-social-icons a {
     display: block;
     padding: 12px;
-    color: #afb1b8;
+    color: var(--icon-color);
     border-radius: 50%;
 }
 .team-social-icons svg {
@@ -474,15 +503,15 @@ body li {
 }
 .team-social-icons a:hover,
 .team-social-icons a:focus {
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: var(--blue);
+    color: var(--font-white);
 }
 .clients h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--font-black);
     text-align: center;
     padding-bottom: 50px;
     display: block;
@@ -495,9 +524,9 @@ body li {
 
 .client-icons a {
     border-radius: 4px;
-    outline: 1px solid #afb1b8;
+    outline: 1px solid var(--icon-color);
     display: inline-block;
-    color: #afb1b8;
+    color: var(--icon-color);
 }
 .client-icons svg {
     display: block;
@@ -507,6 +536,6 @@ body li {
 }
 .client-icons a:hover,
 .client-icons a:focus {
-    color: #2196f3;
-    outline-color: #2196f3;
+    color: var(--blue);
+    outline-color: var(--blue);
 }
